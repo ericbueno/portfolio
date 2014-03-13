@@ -5837,13 +5837,13 @@ footer:after {
   margin-top: 30px;
   margin-bottom: 0px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #masthead h1 {
     float: left;
     width: 66.66666666666666%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #masthead h1 {
     margin-left: 16.666666666666664%;
   }
@@ -5875,13 +5875,13 @@ footer:after {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #masthead nav {
     float: left;
     width: 66.66666666666666%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #masthead nav {
     margin-left: 16.666666666666664%;
   }
@@ -5957,13 +5957,13 @@ footer:after {
   padding-right: 15px;
   margin-bottom: 15px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .project-row a {
     float: left;
     width: 33.33333333333333%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .project-row a:first-child {
     margin-left: 16.666666666666664%;
   }
