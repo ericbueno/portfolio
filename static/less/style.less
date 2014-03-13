@@ -101,6 +101,15 @@
             display: inline-block;;
             .nav;
             .nav-pills;
+            > li {
+                > a {
+                    &:hover,
+                    &:focus {
+                      text-decoration: none;
+                      background-color: transparent;
+                    }
+                }
+            }
         }
     }
 
@@ -108,8 +117,9 @@
 
 .project-row {
     .make-row();
+    margin-top: 0px;
 
-    a {
+    .project {
         .make-sm-column(4);
         &:first-child {
             .make-sm-column-offset(2);
@@ -122,6 +132,10 @@
     }
 }
 
-footer {
+.footer-wrap {
     .container;
+
+    .footer-content {
+        .make-row();
+    }
 }

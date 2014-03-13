@@ -5616,8 +5616,10 @@ button.close {
 #masthead nav ul:after,
 .project-row:before,
 .project-row:after,
-footer:before,
-footer:after {
+.footer-wrap:before,
+.footer-wrap:after,
+.footer-wrap .footer-content:before,
+.footer-wrap .footer-content:after {
   content: " ";
   display: table;
 }
@@ -5639,7 +5641,8 @@ footer:after {
 #masthead:after,
 #masthead nav ul:after,
 .project-row:after,
-footer:after {
+.footer-wrap:after,
+.footer-wrap .footer-content:after {
   clear: both;
 }
 .center-block {
@@ -5946,11 +5949,17 @@ footer:after {
   color: #ffffff;
   background-color: #428bca;
 }
+#masthead nav ul > li > a:hover,
+#masthead nav ul > li > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+}
 .project-row {
   margin-left: -15px;
   margin-right: -15px;
+  margin-top: 0px;
 }
-.project-row a {
+.project-row .project {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -5958,51 +5967,55 @@ footer:after {
   margin-bottom: 15px;
 }
 @media (min-width: 768px) {
-  .project-row a {
+  .project-row .project {
     float: left;
     width: 33.33333333333333%;
   }
 }
 @media (min-width: 768px) {
-  .project-row a:first-child {
+  .project-row .project:first-child {
     margin-left: 16.666666666666664%;
   }
 }
-.project-row a img {
+.project-row .project img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-footer {
+.footer-wrap {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  footer {
+  .footer-wrap {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  footer {
+  .footer-wrap {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  footer {
+  .footer-wrap {
     width: 1170px;
   }
 }
-footer > .navbar-header,
-footer > .navbar-collapse {
+.footer-wrap > .navbar-header,
+.footer-wrap > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
 }
 @media (min-width: 768px) {
-  footer > .navbar-header,
-  footer > .navbar-collapse {
+  .footer-wrap > .navbar-header,
+  .footer-wrap > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
   }
+}
+.footer-wrap .footer-content {
+  margin-left: -15px;
+  margin-right: -15px;
 }
