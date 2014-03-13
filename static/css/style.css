@@ -5977,6 +5977,12 @@ button.close {
     margin-left: 16.666666666666664%;
   }
 }
+@media (max-width: 768px) {
+  .project-row .project {
+    padding: 0 0;
+    margin-bottom: 0;
+  }
+}
 .project-row .project img {
   display: block;
   max-width: 100%;
